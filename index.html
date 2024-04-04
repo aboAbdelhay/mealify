@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>person website</title>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <title>Mealify</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,9 +21,14 @@
       <div class="container">
         <div class="nav">
           <div class="logo"><h1 href="#home">Mealify</h1></div>
-          <ul>
+          <input type="radio" id="check" name="check" />
+          <input type="radio" id="x" name="check" />
+          <ul class="hidden" id="nav">
+            <label for="x" class="x">
+              <i class="fa-solid fa-xmark x"></i>
+            </label>
             <li>
-              <a href="#home" class="active">Home</a>
+              <a href="#home" class="active" for="clk">Home</a>
             </li>
             <li>
               <a href="#chefs">Chefs</a>
@@ -39,9 +45,9 @@
               <i class="fa-solid fa-moon" id="moonn"></i>
               <i class="fa-solid fa-sun show" id="sun"></i>
             </button>
-            <a href="#">
-              <i class="fa-solid fa-bars menu"></i>
-            </a>
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars icon navburger"></i>
+            </label>
           </div>
         </div>
       </div>
@@ -59,7 +65,6 @@
           </p>
           <div class="btn">
             <a href="#contact" class="main">Book a Table</a>
-
             <a class="video" href="https://www.youtube.com/" target="_blank">
               <div class="icon">
                 <i class="fa-solid fa-play"></i>
@@ -277,7 +282,7 @@
     <!-- !====== start contact ======= -->
 
     <div class="contact" id="contact">
-    <div class="the-header">
+      <div class="the-header">
         <p>CONTACT</p>
         <h2>Need Help ?<span> Contact Us</span></h2>
       </div>
