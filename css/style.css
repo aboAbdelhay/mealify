@@ -198,10 +198,9 @@ img {
     width: 30%;
     background-color: #fff;
     border-left: 1px solid #ccccccef;
-    right: 0;
+    right: -100%;
     top: 0px;
     transition: 0.5s;
-    transform: translate(100%);
   }
   .navbar .nav ul i {
     position: absolute;
@@ -219,10 +218,10 @@ img {
     color: black;
   }
   #check:checked ~ #nav {
-    transform: translate(0);
+    right: 0;
   }
   #x:checked ~ #nav {
-    transform: translate(100%);
+    right: -100%;
   }
   .navbar .nav ul li {
     padding: 10px;
