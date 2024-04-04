@@ -366,7 +366,6 @@ img {
     padding-bottom: 40px;
   }
   .home .info h2 {
-    width: 50%;
     margin: auto;
   }
   .home .img {
@@ -386,8 +385,6 @@ img {
 
 @media (max-width: 576px) {
   .home .info h2 {
-    width: 90%;
-    margin: auto;
     font-size: 50px;
   }
 }
@@ -411,9 +408,6 @@ img {
   }
   .home .img {
     width: 40%;
-  }
-  .home .info h2 {
-    width: 80%;
   }
 }
 .home .img img {
